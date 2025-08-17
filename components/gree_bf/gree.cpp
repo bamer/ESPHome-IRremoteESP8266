@@ -87,13 +87,13 @@ namespace esphome
                         this->ac_.setFan(kGreeFanAuto);
                         break;
                     case climate::CLIMATE_FAN_LOW:
-                        this->ac_.setFan(kGreeFanLow);
+                        this->ac_.setFan(kGreeFanMin);
                         break;
                     case climate::CLIMATE_FAN_MEDIUM:
                         this->ac_.setFan(kGreeFanMed);
                         break;
                     case climate::CLIMATE_FAN_HIGH:
-                        this->ac_.setFan(kGreeFanHigh);
+                        this->ac_.setFan(kGreeFanMax);
                         break;
                     }
                 }
