@@ -46,6 +46,17 @@ namespace esphome
             VIR12HP230V1AH = gree_ac_remote_model_t::VIR12HP230V1AH,
             YX1FF = gree_ac_remote_model_t::YX1FF,
             YACIFB = gree_ac_remote_model_t::YACIFB  
+            YAC1FB9 = gree_ac_remote_model_t::YAC1FB9
+              
+        };
+
+         enum Model {
+            LKE = panasonic_ac_remote_model_t::kPanasonicLke,
+            NKE = panasonic_ac_remote_model_t::kPanasonicNke,
+            DKE = panasonic_ac_remote_model_t::kPanasonicDke,
+            JKE = panasonic_ac_remote_model_t::kPanasonicJke,
+            CKP = panasonic_ac_remote_model_t::kPanasonicCkp,
+            RKR = panasonic_ac_remote_model_t::kPanasonicRkr
         };
 
         class GreeClimate : public climate_ir::ClimateIR, public ir_remote_base::IrRemoteBase
