@@ -14,21 +14,12 @@ CONFIG_SCHEMA = climate_ir.climate_ir_with_receiver_schema(GreeClimate)
 
 Model = gree_ns.enum("Model")
 MODELS = {
-    "YBOFB2": Model.YBOFB2,
-    "YAA1FBF": Model.YAA1FBF,
-    "YB1F2F": Model.YB1F2F,
-    "YAN1F1": Model.YAN1F1,
-    "YX1F2F": Model.YX1F2F,
-    "VIR09HP115V1AH": Model.VIR09HP115V1AH,
-    "VIR12HP230V1AH": Model.VIR12HP230V1AH,
-    "YX1FF": Model.YX1FF,
-    "yac1fb9": Model.YAC1FB9,    
-    "YACIFB": Model.YACIFB
-
+    "YAW1F": Model.YAW1F, # (1) Ultimate, EKOKAI, RusClimate (Default)
+    "YBOFB": Model.YBOFB, #Green, YBOFB2, YAPOF3
+    "YX1FSF": Model.YX1FSF # (3) Soleus Air window unit (Similar to YAW1F, but with an
+                        #  Operation mode of Energy Saver (Econo))
 }
 
-           
-    
 
 
 

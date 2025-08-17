@@ -30,35 +30,20 @@
 //   Brand: Vailland,  Model: VAI5-035WNI A/C
 //   Brand: Soleus Air,  Model: window A/C (YX1FSF)
 
+ 
 
 namespace esphome
 {
     namespace gree
     {
         enum Model {
-            YBOFB2 = gree_ac_remote_model_t::YBOFB,
-            YBOFB2 = gree_ac_remote_model_t::YBOFB2,
-            YAA1FBF = gree_ac_remote_model_t::YAA1FBF,
-            YB1F2F = gree_ac_remote_model_t::YB1F2F,
-            YAN1F1 = gree_ac_remote_model_t::YAN1F1,
-            YX1F2F = gree_ac_remote_model_t::YX1F2F,
-            VIR09HP115V1AH = gree_ac_remote_model_t::VIR09HP115V1AH,
-            VIR12HP230V1AH = gree_ac_remote_model_t::VIR12HP230V1AH,
-            YX1FF = gree_ac_remote_model_t::YX1FF,
-            YACIFB = gree_ac_remote_model_t::YACIFB  
-            YAC1FB9 = gree_ac_remote_model_t::YAC1FB9
+            YAW1F = gree_ac_remote_model_t::YAW1F,
+            YBOFB = gree_ac_remote_model_t::YBOFB,
+            YX1FSF = gree_ac_remote_model_t::YX1FSF
               
         };
 
-         enum Model {
-            LKE = panasonic_ac_remote_model_t::kPanasonicLke,
-            NKE = panasonic_ac_remote_model_t::kPanasonicNke,
-            DKE = panasonic_ac_remote_model_t::kPanasonicDke,
-            JKE = panasonic_ac_remote_model_t::kPanasonicJke,
-            CKP = panasonic_ac_remote_model_t::kPanasonicCkp,
-            RKR = panasonic_ac_remote_model_t::kPanasonicRkr
-        };
-
+        
         class GreeClimate : public climate_ir::ClimateIR, public ir_remote_base::IrRemoteBase
         {
         public:
