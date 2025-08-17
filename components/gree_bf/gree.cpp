@@ -63,19 +63,19 @@ namespace esphome
                 switch (this->mode)
                 {
                 case climate::CLIMATE_MODE_AUTO:
-                    this->ac_.setMode(kGreeAcFanAuto);
+                    this->ac_.setMode(kGreeFanAuto);
                     break;
                 case climate::CLIMATE_MODE_HEAT:
-                    this->ac_.setMode(kGreeAcHeat);
+                    this->ac_.setMode(kGreeHeat);
                     break;
                 case climate::CLIMATE_MODE_COOL:
-                    this->ac_.setMode(kGreeAcCool);
+                    this->ac_.setMode(kGreeCool);
                     break;
                 case climate::CLIMATE_MODE_DRY:
-                    this->ac_.setMode(kGreeAcDry);
+                    this->ac_.setMode(kGreeDry);
                     break;
                 case climate::CLIMATE_MODE_FAN_ONLY:
-                    this->ac_.setMode(kGreeAcFan);
+                    this->ac_.setMode(kGreeFan);
                     break;
                 }
 
@@ -84,16 +84,16 @@ namespace esphome
                     switch (this->fan_mode.value())
                     {
                     case climate::CLIMATE_FAN_AUTO:
-                        this->ac_.setFan(kGreeAcFanAuto);
+                        this->ac_.setFan(kGreeFanAuto);
                         break;
                     case climate::CLIMATE_FAN_LOW:
-                        this->ac_.setFan(kGreeAcFanLow);
+                        this->ac_.setFan(kGreeFanLow);
                         break;
                     case climate::CLIMATE_FAN_MEDIUM:
-                        this->ac_.setFan(kGreeAcFanMed);
+                        this->ac_.setFan(kGreeFanMed);
                         break;
                     case climate::CLIMATE_FAN_HIGH:
-                        this->ac_.setFan(kGreeAcFanHigh);
+                        this->ac_.setFan(kGreeFanHigh);
                         break;
                     }
                 }
