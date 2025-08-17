@@ -5,6 +5,7 @@
 #include "esphome.h"
 #include "ir_Gree.h"
 #include "gree.h"
+#include <IRrecv.h>
 
 namespace esphome
 {
