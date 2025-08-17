@@ -41,11 +41,11 @@ namespace esphome
 
             sendGeneric(
                 this->transmitter_,
-                kGreeAcHdrMark, kGreeAcHdrSpace,
-                kGreeAcBitMark, kGreeAcOneSpace,
-                kGreeAcBitMark, kGreeAcZeroSpace,
-                kGreeAcBitMark, kGreeAcMessageGap,
-                message, kGreeAcStateLength,
+                kGreeHdrMark, kGreeHdrSpace,
+                kGreeBitMark, kGreeOneSpace,
+                kGreeBitMark, kGreeZeroSpace,
+                kGreeBitMark, kGreeMessageGap,
+                message, kGreeStateLength,
                 38000
             );
         }
