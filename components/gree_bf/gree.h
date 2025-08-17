@@ -1,9 +1,9 @@
 #pragma once
 
-#include "esphome/esphome/core/log.h"
-#include "esphome/esphome/core/component.h"
-#include "esphome/esphome/core/automation.h"
-#include "esphome/esphome/components/climate_ir/climate_ir.h"
+#include "esphome/core/log.h"
+#include "esphome/core/component.h"
+#include "esphome/core/automation.h"
+#include "esphome/components/climate_ir/climate_ir.h"
 
 #include "ir_Gree.h"
 #include "esphome/components/ir_remote_base/ir_remote_base.h"
