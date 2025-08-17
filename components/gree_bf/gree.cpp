@@ -19,7 +19,7 @@ namespace esphome
         const uint16_t kGreeMsgSpace = 19980;  ///< See #1508, #386, & Kelvinator
         const uint8_t kGreeBlockFooter = 0b010;
         const uint8_t kGreeBlockFooterBits = 3;
-        const uint32_t kGreeAcMessageGap = kDefaultMessageGap;  // Just a guess.
+        const uint32_t kGreeMessageGap = kDefaultMessageGap;  // Just a guess.
 
         static const char *const TAG = "gree.climate";
 
