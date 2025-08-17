@@ -6,7 +6,7 @@ from esphome.const import CONF_MODEL
 
 AUTO_LOAD = ["climate_ir", "ir_remote_base"]
 
-gree_ns = cg.esphome_ns.namespace("gree_bf")
+gree_ns = cg.esphome_ns.namespace("gree")
 GreeClimate = gree_ns.class_("GreeClimate", climate_ir.ClimateIR)
 
 CONFIG_SCHEMA = climate_ir.climate_ir_with_receiver_schema(GreeClimate)
