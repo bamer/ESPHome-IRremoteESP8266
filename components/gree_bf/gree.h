@@ -53,7 +53,10 @@ namespace esphome
                             {climate::CLIMATE_SWING_OFF, climate::CLIMATE_SWING_VERTICAL, climate::CLIMATE_SWING_HORIZONTAL, climate::CLIMATE_SWING_BOTH}) {}
 
             void setup() override;
+                climate::ClimateTraits traits() override;
 
+            void step_horizontal();
+            void step_vertical();
         protected:
             void transmit_state() override;
 
@@ -61,9 +64,11 @@ namespace esphome
             void send();
             void apply_state();
 
-            IRGreeAc ac_ = IRGreeAc(255); // pin is not used
+            IRGreeAC ac_ = IRGreeAC(255); // pin is not used
             ///ac_.setLight= false;
         };
 
     } // namespace gree
 } // namespace esphome
+
+   
