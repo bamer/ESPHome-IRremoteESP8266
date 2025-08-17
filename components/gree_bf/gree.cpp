@@ -101,19 +101,19 @@ namespace esphome
                 switch (this->swing_mode)
                 {
                 case climate::CLIMATE_SWING_OFF:
-                    this->ac_.setSwingHorizontal(false, kGreeSwingHMiddle);
+                    this->ac_.setSwingHorizontal( kGreeSwingHMiddle);
                     this->ac_.setSwingVertical(false,kGreeSwingMiddleDown);
                     break;
                 case climate::CLIMATE_SWING_VERTICAL:
-                    this->ac_.setSwingHorizontal(false, kGreeSwingHMiddle);
+                    this->ac_.setSwingHorizontal(kGreeSwingHMiddle);
                     this->ac_.setSwingVertical(true,kGreeSwingAuto);
                     break;
                 case climate::CLIMATE_SWING_HORIZONTAL:
-                    this->ac_.setSwingHorizontal(true, kGreeSwingHAuto);
+                    this->ac_.setSwingHorizontal( kGreeSwingHAuto);
                     this->ac_.setSwingVertical(false, kGreeSwingMiddleDown);
                     break;
                 case climate::CLIMATE_SWING_BOTH:
-                    this->ac_.setSwingHorizontal(true, kGreeSwingHAuto);
+                    this->ac_.setSwingHorizontal( kGreeSwingHAuto);
                     this->ac_.setSwingVertical(true,kGreeSwingAuto);
                     break;
                 }
