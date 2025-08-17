@@ -5,7 +5,8 @@
 #include "esphome.h"
 #include "ir_Gree.h"
 #include "gree.h"
-#include <IRrecv.h>
+#include "Arduino.h"
+
 
 namespace esphome
 {
