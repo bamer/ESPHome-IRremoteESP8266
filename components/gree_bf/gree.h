@@ -61,7 +61,7 @@ namespace esphome
             void send();
             void apply_state();
 
-            IRGreeAC ac_ = IRGreeAC(255); // pin is not used
+            IRGreeAc ac_ = IRGreeAc(255); // pin is not used
             ///ac_.setLight= false;
         };
 
